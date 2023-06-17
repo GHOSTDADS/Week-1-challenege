@@ -1,70 +1,19 @@
+/* universal selector sets all elements to have 0 padding and margin, and be set to border-box by default.
+This helps for consistent sizing across the page.  */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* sets the background colour for the site and the font family for the text. */
 body {
     background-color: #d9dcd6;
-}
-
-/* Header Section */
-
-header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-header h1 .seo {
-    color: #d9dcd6;
-}
-
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
 }
 
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/*   */
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-/* Float section */
-
+/* Float section.
+floats elements left or right. */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -75,95 +24,132 @@ p {
     margin-left: 25px;
 }
 
+/* Header Section */
 
-.benefits {
+/* this sets the styling for the header.
+Gives a padding of 20 pixels, set the font family, applies a background colour for the header and sets the text colour to white.*/
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/* sets the font size and display type for the header 1 */
+h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Sets the colour for 'seo' in header 1 string 'Horiseon' */
+.seo {
+    color: #d9dcd6;
+}
+
+/* Sets the nav bar to display on the right, sets its font family and size, applies padding+margin for positioning */
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Sets the distance between list elements on the nav bar, removes the dot from list elements and sets the display type. */
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Sets the colours of the links in the nav bar and removes the underline.  */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Sets the background to be centered on an image of a man at a meeting table with 3 others, 
+and sets the spacing  */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main section */
+/* sets the page width and left spacing for the main element. Also sets the display type. */
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*Sets the margin, padding, height, background colour and text colour for the elements with the class content*/
+.content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Sets the max height of images in the section element*/
+section img {
+    max-height: 200px;
+}
+
+/*Sets the bottom margin and font size for the 'header 2' element inside the section element*/
+section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* sets the font size for paragraphs */
+p {
+    font-size: 16px;
+}
+
+/* Aside section */
+/* this sets the general area for the aside content, making the box for the nexted sections to display in.
+also sets 
+ */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* sets the bottom spacing and text colour of the benefit class */
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* sets the bottom spacing and centers header 3 */
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* Applies styling to images inside elements with the class "benefit".
+setting the max width, margin and display type. */
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Main content section */
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-
-section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-section img {
-    max-height: 200px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 /* Footer Section */
 
+/* gives the footer padding, centers it on the page, and sets the font family. */
 footer {
     padding: 30px;
     clear: both;
@@ -171,6 +157,7 @@ footer {
     text-align: center;
 }
 
+/* sets the font size for the header 2 element thats nested inside the footer element*/
 footer h2 {
     font-size: 20px;
 }
